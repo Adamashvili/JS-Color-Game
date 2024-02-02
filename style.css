@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+}
+
+article h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    font-size: 40px;
+    font-family: 'Creepster', system-ui;
+    letter-spacing: 3px;
+    cursor:pointer;
+    text-shadow: 0 0 30px rgb(214, 214, 214);
+}
+
+main {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+main button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(91, 27, 94);
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px rgb(157, 53, 162);
+    transition: 0.5s;
+}
+
+#easy:hover {
+    background-color: rgb(57, 123, 145);
+    box-shadow: 0 0 15px 1px rgb(106, 212, 220);
+}
+
+#hard:hover {
+    background-color: darkred;
+    box-shadow: 0 0 15px 1px rgb(225, 65, 65);
+}
+
+#result {
+    transition: 0.5s;
+}
+
+#start {
+    background-color: darkorchid;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    box-shadow: 0 0 25px 1px rgb(235, 85, 225);
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+#start:hover {
+    transform: scale(1.05);
+    background-color: rgb(197, 92, 250);
+    box-shadow: 0 0 25px 1px rgb(238, 150, 232);
+}
+
+section {
+    display: flex;
+    width: 640px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+}
+
+section div {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: inset 0 0 15px 3px rgb(29, 29, 29);
+    transition: 0.5s;
+}
+
+section div:hover {
+    transform: scale(0.95);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.success {
+    background-color: green;
+    box-shadow: 0 0 15px 1px rgb(91, 235, 91);
+}
+
+.false {
+    background-color: red;
+    box-shadow: 0 0 15px 1px rgb(248, 59, 59);
+}
+
+.hiddenMode {
+    display: none;
+}
+
+.header {
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin-top: 10px;
+
+}

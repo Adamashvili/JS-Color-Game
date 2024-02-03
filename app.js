@@ -51,6 +51,7 @@ function getRandomRGB(list) {
         allBoxes.forEach(box => {
             box.style.visibility = "visible"
             box.style.backgroundColor = colorList.pop()
+            
             box.addEventListener("click", () => {
                 
                 
@@ -58,6 +59,13 @@ function getRandomRGB(list) {
                     resultBtn.classList.remove("false")
                     resultBtn.classList.add("success")
                     resultBtn.innerText = "Success"
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: "You Have Won The Game!",
+                        showConfirmButton: true,
+                        timer: 3500
+                      });
                 }
               else {
                 resultBtn.classList.remove("success")

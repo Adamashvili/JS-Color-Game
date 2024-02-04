@@ -49,6 +49,7 @@ function getRandomRGB(list) {
         resultBtn.classList.remove("false")
         winningText.innerText = getRandomRGB(colorList)
         allBoxes.forEach(box => {
+            box.style.opacity = "1"
             box.style.visibility = "visible"
             box.style.backgroundColor = colorList.pop()
             
@@ -71,6 +72,7 @@ function getRandomRGB(list) {
                 resultBtn.classList.remove("success")
                 resultBtn.classList.add("false")
                 resultBtn.innerText = "Failed"
+                box.style.opacity = "0"
                 box.style.visibility = "hidden"
               }
 

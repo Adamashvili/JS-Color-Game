@@ -109,7 +109,7 @@ easyBtn.addEventListener("click", function () {
 
 
 hardBtn.addEventListener("click", function () {
-    hardBtn = 6
+    boxNumber = 6
     gameLogic = false
     gameIndicator = "hard";
     section.style.height = "auto"

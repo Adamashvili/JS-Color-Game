@@ -1,40 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Game</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <article>
-        <h1 class="header">Color Game</h1>
-        <h1 id="winningText"> - - - - -</h1>
-        <div class="winningCount">
-            <p id="points">Points: <span id="pointNumber">0</span></p>
-        </div>
+      <h1 class="header">Color Game</h1>
+      <h1 id="winningText">- - - - -</h1>
+      <div class="winningCount">
+        <p id="points">Points: <span id="pointNumber">0</span></p>
+      </div>
     </article>
+    <button onclick="startGame()" id="start">START</button>
 
     <main>
-        <button id="easy">Easy</button>
-        <button id="hard">Hard</button>
-        <button id="result">Result</button>
+      <button onclick="fillArray(3)" id="easy">Easy</button>
+      <button onclick="fillArray(6)" id="hard">Hard</button>
+      <button id="result">Result</button>
     </main>
 
-    <section>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </section>
-
-    <footer>
-        <button id="start">START</button>
-    </footer>
+    <section></section>
 
     <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
+  </body>
 </html>

@@ -1,244 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 article {
-    position: relative;
+  position: relative;
 }
-
 
 .header {
-    text-align: center;
-    color: white;
-    width:  fit-content;
-    margin: 0 auto;
-    font-size: 60px;
-    font-family: 'Creepster', system-ui;
-    letter-spacing: 3px;
-    cursor:pointer;
-    padding-top: 20px;
-    animation: headerLight 3s infinite;
-    transition: 0.6s;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 60px;
+  font-family: "Creepster", system-ui;
+  letter-spacing: 3px;
+  cursor: pointer;
+  padding-top: 20px;
+  animation: headerLight 3s infinite;
+  transition: 0.6s;
 }
 
-
-
 #winningText {
-    font-size: 40px;
-    padding-top: 0;
-    width: fit-content;
-    margin: 15px auto;
-    color: white;
-    font-family: 'Creepster', system-ui;
-    cursor: pointer;
+  font-size: 40px;
+  padding-top: 0;
+  width: fit-content;
+  margin: 15px auto;
+  color: white;
+  font-family: "Creepster", system-ui;
+  cursor: pointer;
 }
 
 main {
-
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  visibility: hidden;
+  padding: 30px;
 }
 main button {
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
-    border: none;
-    background-color: rgb(91, 27, 94);
-    color: white;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 1px rgb(157, 53, 162);
-    transition: 0.5s;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(91, 27, 94);
+  color: white;
+  font-family: "Kaushan Script", cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgb(157, 53, 162);
+  transition: 0.5s;
 }
 
 #easy:hover {
-    background-color: rgb(57, 123, 145);
-    box-shadow: 0 0 15px 1px rgb(106, 212, 220);
+  background-color: rgb(57, 123, 145);
+  box-shadow: 0 0 15px 1px rgb(106, 212, 220);
 }
 
 #hard:hover {
-    background-color: darkred;
-    box-shadow: 0 0 15px 1px rgb(225, 65, 65);
+  background-color: darkred;
+  box-shadow: 0 0 15px 1px rgb(225, 65, 65);
 }
 
 #result {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 #start {
-    background-color: darkorchid;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 800;
-    box-shadow: 0 0 25px 1px rgb(235, 85, 225);
-    border: none;
-    border-radius: 20px;
-    transition: 0.5s;
-
+  background-color: darkorchid;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  box-shadow: 0 0 25px 1px rgb(235, 85, 225);
+  border: none;
+  border-radius: 20px;
+  transition: 0.5s;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
 }
 
 #start:hover {
-    transform: scale(1.05);
-    background-color: rgb(197, 92, 250);
-    box-shadow: 0 0 25px 1px rgb(238, 150, 232);
+  transform: scale(1.05);
+  background-color: rgb(197, 92, 250);
+  box-shadow: 0 0 25px 1px rgb(238, 150, 232);
 }
 
 .winningCount {
-    width: 150px;
-    height: 50px;
-    background-color: rgb(189, 146, 37) !important;
-    box-shadow: 0 -3px 17px 4px #b3b300;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 0 0 40px 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: pointLight 2s infinite;
-    
+  width: 150px;
+  height: 50px;
+  background-color: rgb(189, 146, 37) !important;
+  box-shadow: 0 -3px 17px 4px #b3b300;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0 0 40px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pointLight 2s infinite;
 }
 .winningCount p {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 19px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 19px;
 }
 
 .winningCount span {
-    color: white;
-    font-family: 'Creepster', system-ui;
+  color: white;
+  font-family: "Creepster", system-ui;
 }
 
 section {
-    display: flex;
-    width: 640px;
-    margin: 40px auto;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-
+  display: flex;
+  max-width: 640px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 section div {
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-    cursor: pointer;
-    border-radius: 8px;
-    box-shadow: inset 0 0 15px 3px rgb(29, 29, 29);
-    transition: 0.5s;
-    animation: rotatingCubes 3s infinite;
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: inset 0 0 15px 3px rgb(29, 29, 29);
+  transition: 0.5s;
+  animation: rotatingCubes 3s infinite;
 }
 
 section div:hover {
-    transform: scale(0.95);
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-footer button {
-    width: 200px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+  transform: scale(0.95);
 }
 
 .success {
-    background-color: green;
-    box-shadow: 0 0 15px 1px rgb(91, 235, 91);
+  background-color: green;
+  box-shadow: 0 0 15px 1px rgb(91, 235, 91);
 }
 
 .false {
-    background-color: red;
-    box-shadow: 0 0 15px 1px rgb(248, 59, 59);
+  background-color: red;
+  box-shadow: 0 0 15px 1px rgb(248, 59, 59);
 }
 
-.hiddenMode {
-    display: none;
+.currentMode {
+  background-color: blueviolet;
+  box-shadow: 0 0 15px 1px blueviolet;
 }
+
 
 .winnerBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 40px;
-    font-family: 'Creepster', system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-family: "Creepster", system-ui;
 }
 
 
-.swal2-popup {
-    font-size: 1 rem !important;
-    font-family: 'Lobster', sans-serif;
+@keyframes rotatingCubes {
+  0% {
+    transform: scale(0.98);
+    box-shadow: inset 0 0 10px 3px rgb(0, 0, 0);
   }
 
-@keyframes rotatingCubes {
-    0% {
-        transform: scale(0.98);
-        box-shadow: inset 0 0 10px 3px rgb(0, 0, 0);
-    }
+  50% {
+    transform: scale(1);
+    box-shadow: inset 0 0 1px 1px rgb(0, 0, 0);
+  }
 
-    50% {
-        transform:  scale(1);
-        box-shadow: inset 0 0 1px 1px rgb(0, 0, 0);
-        
-    }
-
-    100% {
-        transform: scale(0.98);
-        box-shadow: inset 0 0 10px 3px rgb(0, 0, 0);
-    }
-    
+  100% {
+    transform: scale(0.98);
+    box-shadow: inset 0 0 10px 3px rgb(0, 0, 0);
+  }
 }
 
 @keyframes headerLight {
-    0% {
-        text-shadow: 0 0 25px rgb(214, 214, 214);
-        color: white;
-    }
-    50% {
-        text-shadow: 0 0 15px rgb(214, 214, 214);
-        color: rgb(255, 189, 21);
-    }
-    100% {
-        text-shadow: 0 0 25px rgb(214, 214, 214);
-        color: white;
-    }
-    
+  0% {
+    text-shadow: 0 0 25px rgb(214, 214, 214);
+    color: white;
+  }
+  50% {
+    text-shadow: 0 0 15px rgb(214, 214, 214);
+    color: rgb(255, 189, 21);
+  }
+  100% {
+    text-shadow: 0 0 25px rgb(214, 214, 214);
+    color: white;
+  }
 }
 
 @keyframes pointLight {
-    0% {
-        box-shadow: 0 -3px 17px 4px #b3b300;
-    }
+  0% {
+    box-shadow: 0 -3px 17px 4px #b3b300;
+  }
 
-    50% {
-        box-shadow: -2px -6px 35px 5px #f0f038;
-    }
+  50% {
+    box-shadow: -2px -6px 35px 5px #f0f038;
+  }
 
-    100% {
-        box-shadow: 0 -3px 17px 4px #b3b300;
-    }
-    
+  100% {
+    box-shadow: 0 -3px 17px 4px #b3b300;
+  }
 }
